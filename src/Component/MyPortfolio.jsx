@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './Style/MyPortfolio.css'
+// import './Style/MyPortfolio.css'
 import Action from './Redux/Action'
 import { useDispatch, useSelector } from 'react-redux'
 import { FaLinkedinIn, } from 'react-icons/fa';
