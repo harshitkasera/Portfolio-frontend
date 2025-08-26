@@ -1,0 +1,101 @@
+/* 
+
+.dp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+} 
+
+
+.prof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.fullbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.dpbtn{border-radius: 15px;}
+.myname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1200px 0;
+    animation: backcolor 3s linear infinite;
+}
+
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.full-h1 {
+    font-size: 90px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.my_dp {
+    margin-top: -45px;
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+}
+
+.wrapper_outer {
+   height: 100vh;
+   overflow: hidden;
+}
+  
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+.paralla_Section{
+      min-height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+     overflow: hidden;
+   transform-style: preserve-3d;
+}
+.parallax_Section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+   transform-style: preserve-3d;
+    
+}
+
+.paralex-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    min-height: 100%;
+     transform:translate3d(0,0,-1px) scale(2);
+}
+ */
+
