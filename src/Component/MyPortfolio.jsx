@@ -50,12 +50,15 @@ const MyPortfolio = () => {
           <div>
             <img src='./Images/aboutImage.jpeg' alt="about" />
           </div>
-          <div className='abo-text'>
-            <p>My name is <b>Harshit Kasera</b>, currently I live in Indore and I belong to Shajapur.
-              Currently I'm doing an <i>Internship</i> at <b>Indvibe Infotech Pvt Ltd</b>.  
+
+          <div>
+            
+            <p>My name is Harshit Kasera, currently I live in Indore and I belong to Shajapur.
+              Currently I'm doing an Internship at Indvibe Infotech Pvt Ltd.
               Recently I have completed my B-Tech in Computer Science and Engineering 
-              from <b>Mathuradevi Institute of Technology</b>.
+              from Mathuradevi Institute of Technology
             </p>
+
           </div>
         </div>
       </div>
@@ -63,6 +66,7 @@ const MyPortfolio = () => {
       {/* Skills Section */}
       <div className='parallax_Section'>
         <div className='paralex-bgt'></div>
+        <div className='box'>
         <h2 id='3'>Skills</h2>
         <div className="skills-container">
           <div className='s-img'><img src='./Images/mongo.png' className='img' alt="mongo"/>MongoDB</div>
@@ -71,15 +75,15 @@ const MyPortfolio = () => {
           <div className='s-img'><img src='./Images/node.png' className='img' alt="node"/>Node.js</div>
         </div>
       </div>
-
+</div>
       {/* Projects Section */}
       <div className='parallax_Section'>
         <div className='paralex-bgf'></div>
-        <h2 id='4'>Projects</h2>
+        <h2 className='this' id='4'>Projects</h2>
         <div className="projects-container">
           {Data?.map((items, index) => (
             <div className='cart' key={index}>
-              <img className='image' src={`https://portfolio-1-62b3.onrender.com/${items.img}`} alt={items.name} />
+              <img className='image' src={`https://portfolio-2-xgnk.onrender.com${items.img}`} alt={items.name} />
               <h4>{items.name}</h4>
               <p>{items.desc}</p>
               <a href='./Images'><button className='buton'>Check Project</button></a>
