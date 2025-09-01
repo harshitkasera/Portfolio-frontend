@@ -7,12 +7,12 @@
   z-index: 1000;
   width: 100%;
 }
-.navbar-brand{
+
+.navbar-brand {
   color: white;
   background: linear-gradient(grey, rgb(69, 69, 207), blue, rgb(69, 69, 207), grey);
   border-radius: 150px;
 }
-
 .navbar .nav-link {
   color: #fff !important;
   font-size: 16px;
@@ -49,24 +49,27 @@
   background: #0f2027;
 }
 
-.paralla_Section, 
+.paralla_Section,
 .parallax_Section {
   text-align: center;
   padding: 60px 20px;
   position: relative;
 }
 
-.paralex-bg, .paralex-bgt, .paralex-bgf {
+.paralex-bg,
+.paralex-bgt,
+.paralex-bgf {
   background-size: cover;
   background-attachment: fixed;
-  height: 300px;
+  height: 290px;
   filter: brightness(0.5);
   border-radius: 12px;
 }
-.skil-box{
-    display: flex;
-    gap: 15px;
 
+.skil-box {
+  display: flex;
+  gap: 15px;
+  
 }
 
 /* 🖼️ Profile Image */
@@ -85,9 +88,11 @@
 }
 
 /* ✨ Buttons */
-.dpbtn, .buton {
+.dpbtn,
+.buton {
   background: linear-gradient(45deg, #00C9FF, #92FE9D);
   border: none;
+  margin-top: 25px;
   padding: 12px 24px;
   border-radius: 30px;
   color: #000;
@@ -96,7 +101,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dpbtn:hover, .buton:hover {
+.dpbtn:hover,
+.buton:hover {
   transform: translateY(-3px);
   box-shadow: 0px 6px 15px rgba(0, 201, 255, 0.6);
 }
@@ -131,8 +137,15 @@
   flex-wrap: wrap;
   gap: 25px;
   margin-top: 30px;
+  transition: 2s;
 }
-
+.sk{
+  margin-top: 52px;
+}
+.x{
+  text-decoration: none;
+  color: white;
+}
 .s-img {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -150,6 +163,10 @@
   transform: scale(1.1);
   filter: drop-shadow(0 0 10px #00C9FF);
 }
+.x:hover{
+    transform: rotatey(360deg);
+    transition: 2s;
+}
 
 
 /* 🛠️ Projects Flex */
@@ -159,6 +176,10 @@
   justify-content: center;
   gap: 25px;
   margin-top: 30px;
+}
+.projects-container:hover{
+  transform: scale(1.1);
+  transition: 2s;
 }
 
 .cart {
@@ -181,7 +202,7 @@
 }
 
 
-/* 📩 Footer */
+/*  Footer */
 .foot {
   text-align: center;
   padding: 40px 20px;
@@ -230,7 +251,9 @@
 }
 
 @media (max-width: 480px) {
-  .dpbtn, .buton {
+
+  .dpbtn,
+  .buton {
     padding: 10px 18px;
     font-size: 14px;
   }
@@ -242,3 +265,136 @@
 }
 
 
+.full-h1{
+  /* -webkit-text-stroke: 1px #fff; */
+  color: transparent; 
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -950px 0;
+  font-size: 40px;  animation: backcolor 4s linear infinite;
+  text-shadow: 0px 0px 3px  rgb(255, 255, 255);
+  background-image: linear-gradient(#fff, #fff);
+}
+
+@keyframes backcolor{
+  100%{
+    background-position: 0 0;
+
+  }
+}
+footer.foot {
+  background: #7688c428;  /* Dark background */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer.foot h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+   color: #00C9FF;
+
+}
+.image{
+  height: 130px;
+}
+footer.foot p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.full-fot {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-fot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-fot i,
+.icon-fot .icon {
+  font-size: 1.3rem;
+  color:  #00C9FF;
+  transition: 0.3s ease;
+}
+
+.icon-fot i:hover,
+.icon-fot .icon:hover {
+  color: #fff;
+}
+
+a.fot {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+a.fot:hover {
+  color: #00C9FF;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .full-fot {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icon-fot {
+    margin: 0 20px;
+  }
+}
+
+.about-text {
+  max-width: 800px;     /* Text area limited for better readability */
+  margin: 40px auto;    /* Center align with spacing */
+  padding: 20px;
+  background: #2fc4d805;  /* Light background box */
+  border-radius: 12px;  /* Rounded corners */
+  line-height: 1.8;     /* Good readability */
+  font-size: 1.1rem;
+  color: #fcfafa;
+  text-align: justify;  /* Proper alignment */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight Important Words */
+.about-text strong {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+/* Add small animation effect */
+.about-text:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+/* 
+
+.wrapper_outer{
+  width: 100%; 
+  height: 700px;
+  overflow: auto ;
+  padding: 50px;
+  box-shadow: 0px 7px 46px 0 black;
+  background: #1c2e4a;
+  border-radius: 8px;
+  background-image: linear-gradient(147deg, #2e3a59 0%, #1a2b46 74%)
+  ;
+} */

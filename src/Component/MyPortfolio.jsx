@@ -19,7 +19,7 @@ const MyPortfolio = () => {
   }
 
   const about = {
-    backgroundImage: "url('/Images/A.avif')"
+    backgroundImage: "url('/Images/aboutImage.jpeg')"
   }
 
   return (
@@ -43,20 +43,21 @@ const MyPortfolio = () => {
       </div>
 
       {/* About Section */}
-      <div className='parallax_Section'>
+      <div  id="2" className='parallax_Section'>
         <div className='paralex-bg' style={about}></div>
-        <h2 className='abou-h' id="2">About Me</h2>
+        <h2 className='abou-h'>About Me</h2>
         <div className='abo-box'>
           <div>
             <img src='./Images/aboutImage.jpeg' alt="about" />
           </div>
 
-          <div>
+          <div >
             
-            <p>My name is Harshit Kasera, currently I live in Indore and I belong to Shajapur.
+            <p  className='about-text'>My name is Harshit Kasera, currently I live in Indore and I belong to Shajapur.
               Currently I'm doing an Internship at Indvibe Infotech Pvt Ltd.
               Recently I have completed my B-Tech in Computer Science and Engineering 
-              from Mathuradevi Institute of Technology
+              from Mathuradevi Institute of Technology, and my class 10th is percentage 72.9 from Sandeepani Gyanpeeth School Shajapur,and my class 12th is percentage 72.2 from We Care Higher Secondary School Shajapur, I have gained valuable skill HTML CSS JavaScript and React, and the other backend is MongoDB, Express.js, Node.js, and I'm talking about my goal, So short term goal is to become FullStack Developer, and Long term goal is to work reputed companies,
+              and My Strength is quick learner and passionate about frontend technologies, and my hobby  is trading and market Analysis, so thats all about me Thankyou
             </p>
 
           </div>
@@ -64,30 +65,39 @@ const MyPortfolio = () => {
       </div>
 
       {/* Skills Section */}
-      <div className='parallax_Section'>
-        <div className='paralex-bgt'></div>
+      <div   id='3' >
+      <div  className='parallax_Section'>
+        {/* <div className='paralex-bgt'></div> */}
         <div className='box'>
-        <h2 id='3'>Skills</h2>
+        <h2 className='sk'>Skills</h2>
         <div className="skills-container">
+      <a className='x' href='https://www.geeksforgeeks.org/mongodb/what-is-mongodb-working-and-features/'>
           <div className='s-img'><img src='./Images/mongo.png' className='img' alt="mongo"/>MongoDB</div>
-          <div className='s-img'><img src='./Images/express.png' className='img' alt="express"/>Express</div>
-          <div className='s-img'><img src='./Images/react.png' className='img' alt="react"/>React</div>
-          <div className='s-img'><img src='./Images/node.png' className='img' alt="node"/>Node.js</div>
+        </a>
+      <a className='x' href='https://expressjs.com/'>
+          <div className='s-img'><img src='./Images/express.png' className='img' alt="express"/>Express</div></a>
+      <a className='x' href='https://react.dev/'>
+          <div className='s-img'><img src='./Images/react.png' className='img' alt="react"/>React</div></a>
+      <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+          <div className='s-img'><img src='./Images/node.png' className='img' alt="node"/>Node.js</div></a>
         </div>
+      </div>
       </div>
 </div>
       {/* Projects Section */}
-      <div className='parallax_Section'>
-        <div className='paralex-bgf'></div>
-        <h2 className='this' id='4'>Projects</h2>
+      <div id='4' className='parallax_Section'>
+        {/* <div className='paralex-bgf'></div> */}
+        <h2 className='this' >Projects</h2>
         <div className="projects-container">
           {Data?.map((items, index) => (
             <div className='cart' key={index}>
-              <img className='image' src={`https://portfolio-2-xgnk.onrender.com${items.img}`} alt={items.name} />
+              <img className='image' src={`http://localhost:1234/${items.img}`} alt={items.name} />
+
               <h4>{items.name}</h4>
               <p>{items.desc}</p>
-              <a href='./Images'><button className='buton'>Check Project</button></a>
+              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Check Project</button></a>
             </div>
+            
           ))}
         </div>
       </div>
@@ -95,14 +105,17 @@ const MyPortfolio = () => {
       {/* Footer */}
       <footer className='foot'>
         <h2 id='5'>Contact</h2>
+        <p>+91-9302252353</p>
+        <div className='full-fot'>
+       <div className='icon-fot'>  <FaLinkedinIn className='icon'/>
+         <a className='fot' href='https://www.linkedin.com/in/harshit-kasera-75b220263/'>Harshit Kasera</a></div>
+       <div className='icon-fot'>  <FaInstagram className='icon'/>
+         <a className='fot' href='https://www.instagram.com/'>kasera_353_</a>
+        <div className='icon-fot'>
         <i className="fa-solid fa-envelope"></i>
-         <a href='#'>harshitkasera01@gmail.com</a>
-         <FaLinkedinIn/>
-         <a href='#'>Harshit Kasera</a>
-         <FaInstagram/>
-         <a href='#'>kasera_353_</a>
-         
-
+         <a className='fot' href='https://mail.google.com/mail/u/0/#inbox'>harshitkasera01@gmail.com</a></div>
+         </div>
+</div>
 
       </footer>
     </div>
