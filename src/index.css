@@ -10,8 +10,7 @@
 
 .navbar-brand {
   color: white;
-  background: linear-gradient(grey, rgb(69, 69, 207), blue, rgb(69, 69, 207), grey);
-  border-radius: 150px;
+
 }
 .navbar .nav-link {
   color: #fff !important;
@@ -46,7 +45,7 @@
 .wrapper_outer {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background: #0f2027;
+  background: #0a1f2a;
 }
 
 .paralla_Section,
@@ -313,7 +312,7 @@ footer.foot p {
 .icon-fot {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
 }
 
 .icon-fot i,
@@ -331,6 +330,7 @@ footer.foot p {
 a.fot {
   text-decoration: none;
   color: #ddd;
+  gap: 10px;
   font-size: 1rem;
   transition: 0.3s ease;
 }
