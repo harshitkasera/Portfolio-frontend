@@ -1,18 +1,8 @@
 import React, { useEffect } from 'react'
-// import './Style/MyPortfolio.css'
-import Action from './Redux/Action'
-import { useDispatch, useSelector } from 'react-redux'
 import { FaLinkedinIn, } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 
 const MyPortfolio = () => {
-  const { Data } = useSelector(state => state.items)
-  console.log(Data)
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    dispatch(Action())
-  }, [dispatch])
 
   const heading = {
     backgroundImage: "url('/Images/chex.png')"
@@ -29,7 +19,7 @@ const MyPortfolio = () => {
       <div id="1" className='paralla_Section'>
         <div className='paralex-bg' style={heading}></div>
         <div className='dp'>
-          <img className='my_dp' src='./Images/harshu.jpg' alt="profile" />
+          <img className='my_dp' src='./Images/harsh.jpg' alt="profile" />
         </div>
         <div className='myname'>
           <h1 className='full-h1'>Hi, I'm Harshit Kasera</h1>
@@ -89,18 +79,44 @@ const MyPortfolio = () => {
         {/* <div className='paralex-bgf'></div> */}
         <h2 className='this' >Projects</h2>
         <div className="projects-container">
-          {Data?.map((items, index) => (
-            <div className='cart' key={index}>
-              <img className='image' src={`http://localhost:1234/${items.img}`} alt={items.name} />
+          {/* 1st project--------------- */}
 
-              <h4>{items.name}</h4>
-              <p>{items.desc}</p>
-              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Check Project</button></a>
+           <div className='cart' >
+              <img className='image' src='./Uploads/Aptitute-Test.webp'  />
+
+              <h4>Aptitude Tracker</h4>
+              <p>This is my First Project 'Aptitude Tracker System'</p>
+              <a href='http://apptitudetracker.netlify.app'><button className='buton'>Check Project</button></a>
+              <a href='https://github.com/harshitkasera/Apptitude-.git'><button className='buton'>Code</button></a>
             </div>
 
-          ))}
+        {/* {/------------------------------------------------2nd project-*  */} 
+            <div className='cart' >
+              <img className='image' src='./Uploads/crud.jpeg'  />
+
+              <h4>Employe Managment</h4>
+              <p>This is my Second Project 'Employee-Managment System'</p>
+              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Check Project</button></a>
+              <a href='https://github.com/harshitkasera/Employeefont.git'><button className='buton'>Code</button></a>
+            </div>
+
+            {/* ------third projectt */}
+
+            <div className='cart' >
+              <img className='image' src='./Uploads/Ecommerce.jpeg'  />
+
+              <h4>Ecommerce Website</h4>
+              <p>This is my First Project 'Ecommerce - Website '</p>
+              <a href='https://shopppin.netlify.app/'><button className='buton'>Check Project</button></a>
+              <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+            </div>
+          
+
         </div>
       </div>
+          
+  
+     
 
       {/* Footer */}
       <footer className='foot'>

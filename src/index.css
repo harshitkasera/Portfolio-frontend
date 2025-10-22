@@ -92,11 +92,13 @@
   background: linear-gradient(45deg, #00C9FF, #92FE9D);
   border: none;
   margin-top: 25px;
-  padding: 12px 24px;
+  padding: 10px 5px;
   border-radius: 30px;
   color: #000;
   font-weight: bold;
+  gap: 5px;
   cursor: pointer;
+  width: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
