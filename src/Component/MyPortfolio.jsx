@@ -61,13 +61,19 @@ const MyPortfolio = () => {
           <div className='box'>
             <h2 className='sk'>Skills</h2>
             <div className="skills-container">
+              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+                <div className='s-img'><img src='./Images/html.png' className='img' alt="node" />HTML</div></a>
+              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+                <div className='s-img'><img src='./Images/css.jpg' className='img' alt="node" />CSS</div></a>
+              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+                <div className='s-img'><img src='./Images/js.png' className='img' alt="node" height="61px" />JavaScript</div></a>
+              <a className='x' href='https://react.dev/'>
+                <div className='s-img'><img src='./Images/react.png' className='img' alt="react" />React</div></a>
               <a className='x' href='https://www.geeksforgeeks.org/mongodb/what-is-mongodb-working-and-features/'>
                 <div className='s-img'><img src='./Images/mongo.png' className='img' alt="mongo" />MongoDB</div>
               </a>
               <a className='x' href='https://expressjs.com/'>
                 <div className='s-img'><img src='./Images/express.png' className='img' alt="express" />Express</div></a>
-              <a className='x' href='https://react.dev/'>
-                <div className='s-img'><img src='./Images/react.png' className='img' alt="react" />React</div></a>
               <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
                 <div className='s-img'><img src='./Images/node.png' className='img' alt="node" />Node.js</div></a>
             </div>
@@ -86,8 +92,8 @@ const MyPortfolio = () => {
 
               <h4>Aptitude Tracker</h4>
               <p>This is my First Project 'Aptitude Tracker System'</p>
-              <a href='http://apptitudetracker.netlify.app'><button className='buton'>Check Project</button></a>
               <a href='https://github.com/harshitkasera/Apptitude-.git'><button className='buton'>Code</button></a>
+              <a href='http://apptitudetracker.netlify.app'><button className='buton'>Live</button></a>
             </div>
 
         {/* {/------------------------------------------------2nd project-*  */} 
@@ -96,8 +102,8 @@ const MyPortfolio = () => {
 
               <h4>Employe Managment</h4>
               <p>This is my Second Project 'Employee-Managment System'</p>
-              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Check Project</button></a>
               <a href='https://github.com/harshitkasera/Employeefont.git'><button className='buton'>Code</button></a>
+              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Live</button></a>
             </div>
 
             {/* ------third projectt */}
@@ -106,11 +112,19 @@ const MyPortfolio = () => {
               <img className='image' src='./Uploads/Ecommerce.jpeg'  />
 
               <h4>Ecommerce Website</h4>
-              <p>This is my First Project 'Ecommerce - Website '</p>
-              <a href='https://shopppin.netlify.app/'><button className='buton'>Check Project</button></a>
+              <p>This is my third Project 'Ecommerce - Website '</p>
               <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+              <a href='https://shopppin.netlify.app/'><button className='buton'>Live</button></a>
             </div>
-          
+
+            <div className='cart' >
+              <img className='image' src='./Images/food.jpg'  />
+
+              <h4> Restaurant Website</h4>
+              <p>This is my React Project 'Restaurant - Website '</p>
+              <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+              <a href='https://shopppin.netlify.app/'><button className='buton'>Live</button></a>
+            </div>
 
         </div>
       </div>
@@ -120,7 +134,7 @@ const MyPortfolio = () => {
 
       {/* Footer */}
       <footer className='foot'>
-        <h2 id='5'>Contact</h2>
+        <h2 id='5'>Connect</h2>
         <p>+91-9302252353</p>
         <div className='full-fot'>
           <div className='icon-fot'>  <FaLinkedinIn className='icon' />
