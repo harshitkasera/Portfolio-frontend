@@ -61,11 +61,11 @@ const MyPortfolio = () => {
           <div className='box'>
             <h2 className='sk'>Skills</h2>
             <div className="skills-container">
-              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+              <a className='x' href='https://www.w3schools.com/html/'>
                 <div className='s-img'><img src='./Images/html.png' className='img' alt="node" />HTML</div></a>
-              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+              <a className='x' href='https://www.w3schools.com/css/'>
                 <div className='s-img'><img src='./Images/css.jpg' className='img' alt="node" />CSS</div></a>
-              <a className='x' href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>
+              <a className='x' href='https://www.w3schools.com/js/DEFAULT.asp'>
                 <div className='s-img'><img src='./Images/js.png' className='img' alt="node" height="61px" />JavaScript</div></a>
               <a className='x' href='https://react.dev/'>
                 <div className='s-img'><img src='./Images/react.png' className='img' alt="react" />React</div></a>
@@ -87,50 +87,69 @@ const MyPortfolio = () => {
         <div className="projects-container">
           {/* 1st project--------------- */}
 
-           <div className='cart' >
-              <img className='image' src='./Uploads/Aptitute-Test.webp'  />
+          <div className='cart' >
+            <img className='image' src='./Uploads/Aptitute-Test.webp' />
 
-              <h4>Aptitude Tracker</h4>
-              <p>This is my First Project 'Aptitude Tracker System'</p>
-              <a href='https://github.com/harshitkasera/Apptitude-.git'><button className='buton'>Code</button></a>
-              <a href='http://apptitudetracker.netlify.app'><button className='buton'>Live</button></a>
-            </div>
+            <h4>Aptitude Tracker</h4>
+            <p>This is my First Project 'Aptitude Tracker System'</p>
+            <a href='https://github.com/harshitkasera/Apptitude-.git'><button className='buton'>Code</button></a>
+            <a href='http://apptitudetracker.netlify.app'><button className='buton'>Live</button></a>
+          </div>
 
-        {/* {/------------------------------------------------2nd project-*  */} 
-            <div className='cart' >
-              <img className='image' src='./Uploads/crud.jpeg'  />
+          {/* {/------------------------------------------------2nd project-*  */}
+          <div className='cart' >
+            <img className='image' src='./Uploads/crud.jpeg' />
 
-              <h4>Employe Managment</h4>
-              <p>This is my Second Project 'Employee-Managment System'</p>
-              <a href='https://github.com/harshitkasera/Employeefont.git'><button className='buton'>Code</button></a>
-              <a href='https://employeeprojec.netlify.app/'><button className='buton'>Live</button></a>
-            </div>
+            <h4>Employe Managment</h4>
+            <p>This is my Second Project 'Employee-Managment System'</p>
+            <a href='https://github.com/harshitkasera/Employeefont.git'><button className='buton'>Code</button></a>
+            <a href='https://employeeprojec.netlify.app/'><button className='buton'>Live</button></a>
+          </div>
 
-            {/* ------third projectt */}
+          {/* ------third projectt */}
 
-            <div className='cart' >
-              <img className='image' src='./Uploads/Ecommerce.jpeg'  />
+          <div className='cart' >
+            <img className='image' src='./Uploads/Ecommerce.jpeg' />
 
-              <h4>Ecommerce Website</h4>
-              <p>This is my third Project 'Ecommerce - Website '</p>
-              <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
-              <a href='https://shopppin.netlify.app/'><button className='buton'>Live</button></a>
-            </div>
+            <h4>Ecommerce Website</h4>
+            <p>This is my third Project 'Ecommerce - Website '</p>
+            <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+            <a href='https://shopppin.netlify.app/'><button className='buton'>Live</button></a>
+          </div>
 
-            <div className='cart' >
-              <img className='image' src='./Images/food.jpg'  />
+          <div className='cart' >
+            <img className='image' src='./Images/food.jpg' />
 
-              <h4> Restaurant Website</h4>
-              <p>This is my React Project 'Restaurant - Website '</p>
-              <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
-              <a href='https://shopppin.netlify.app/'><button className='buton'>Live</button></a>
-            </div>
+            <h4> Restaurant Website</h4>
+            <p>This is my React Project 'Restaurant - Website '</p>
+            <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+            <a href='https://nileshrestaurent.netlify.app/'><button className='buton'>Live</button></a>
+          </div>
+
+         
+
+          <div className='cart' >
+            <img className='image' src='./Images/image.jpg' />
+
+            <h4> Theater Website</h4>
+            <p>This is my Booking Project 'Shopping - Website '</p>
+            <a href='https://github.com/harshitkasera/EShoppingfrontend.git'><button className='buton'>Code</button></a>
+            <a href='https://fabulous-eclair-cf6e4b.netlify.app/'><button className='buton'>Live</button></a>
+          </div>
+          <div className='cart' >
+            <img className='image' src='./Images/shop.jpg' />
+
+            <h4> My Local Website</h4>
+            <p>This is my Local Project 'Shopping - Website '</p>
+            <a href='https://github.com/harshitkasera/my-website.git'><button className='buton'>Code</button></a>
+            <a href='https://websitesme.netlify.app/'><button className='buton'>Live</button></a>
+          </div>
 
         </div>
       </div>
-          
-  
-     
+
+
+
 
       {/* Footer */}
       <footer className='foot'>

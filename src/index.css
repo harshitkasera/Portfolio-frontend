@@ -45,7 +45,7 @@
 .wrapper_outer {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background: #0a1f2a;
+  background: #160c03;
 }
 
 .paralla_Section,
@@ -213,7 +213,7 @@
 .foot i {
   margin: 0 10px;
   font-size: 24px;
-  color: #aaa;
+  color: #ba3131;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -267,7 +267,6 @@
 
 
 .full-h1{
-  /* -webkit-text-stroke: 1px #fff; */
   color: transparent; 
   background-repeat: no-repeat;
   -webkit-background-clip: text;
