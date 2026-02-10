@@ -19,7 +19,7 @@ const MyPortfolio = () => {
       <div id="1" className='paralla_Section'>
         <div className='paralex-bg' style={heading}></div>
         <div className='dp'>
-          <img className='my_dp' src='./Images/photo.jpg' alt="profile" />
+          <img className='my_dp' src='./Images/photo.jpeg' alt="profile" />
         </div>
         <div className='myname'>
           <h1 className='full-h1'>Hi, I'm Harshit Kasera</h1>
