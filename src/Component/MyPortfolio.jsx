@@ -35,14 +35,9 @@ const MyPortfolio = () => {
       {/* About Section */}
       <div id="2" className='parallax_Section'>
         <div className='paralex-bg' style={about}></div>
+        
         <h2 className='abou-h'>About Me</h2>
         <div className='abo-box'>
-          <div>
-            <img src='./Images/aboutImage.jpeg' alt="about" />
-          </div>
-
-          <div >
-
             <p className='about-text'>My name is Harshit Kasera, currently I live in Indore and I belong to Shajapur.
               Currently I'm doing an Internship at Indvibe Infotech Pvt Ltd.
               Recently I have completed my B-Tech in Computer Science and Engineering
@@ -50,7 +45,7 @@ const MyPortfolio = () => {
               and My Strength is quick learner and passionate about frontend technologies, and my hobby  is trading and market Analysis, so thats all about me Thankyou
             </p>
 
-          </div>
+         
         </div>
       </div>
 
